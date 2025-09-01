@@ -32,9 +32,9 @@ export default function Footer() {
 	];
 
 	return(
-		<div className="relative  bg-primary flex flex-col items-center py-[70px] px-[14px] md:px-[100px] overflow-hidden">
+		<div className="z-10 relative bg-primary flex flex-col items-center py-[70px] px-[14px] md:px-[100px] overflow-hidden">
 			<span
-				className="absolute bottom-20 md:bottom-35 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-[112px] md:text-[280px] text-white/10 select-none pointer-events-none whitespace-nowrap max-w-full"
+				className="absolute bottom-20 md:bottom-35 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-[112px] md:text-[280px] text-white/10 select-none pointer-events-none whitespace-nowrap max-w-full	"
 				style={{
 					WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1))",
 					WebkitMaskRepeat: "no-repeat",
