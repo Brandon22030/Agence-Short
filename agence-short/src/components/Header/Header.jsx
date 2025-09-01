@@ -3,8 +3,8 @@
 import Image from "next/image";
 import {useState} from "react";
 
-import Open from "@/icons/open";
-import Close from "@/icons/close";
+import Open from "@/components/icons/open";
+import Close from "@/components/icons/close";
 
 
 export default function Header() {
@@ -32,10 +32,9 @@ export default function Header() {
 	];
 
 	return(
-		<div className="bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
+		<div className="fixed top-0 left-0 bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
 			<div className="flex justify-between items-center ">
 				<Image src={"/images/logo.svg"} alt="logo" width={50} height={50} className="md:w-[70px]"/>
-
 				<button onClick={toggleMenu} className="md:hidden p-2 flex items-center justify-center transition cursor-pointer">
 					{openMenu ? <Close/> : <Open/>}
 				</button>

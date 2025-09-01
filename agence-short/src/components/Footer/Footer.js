@@ -1,5 +1,5 @@
-import Instagram from "@/icons/instagram";
-import Linkedin from "@/icons/linkedin";
+import Instagram from "@/components/icons/instagram";
+import Linkedin from "@/components/icons/linkedin";
 import Image from "next/image";
 
 export default function Footer() {
@@ -7,27 +7,27 @@ export default function Footer() {
 	const menuItems = [
 		{
 			label: "Accueil",
-			href: "#"
+			href: "#",
 		},
 		{
 			label: "Étude de cas",
-			href: "#"
+			href: "#",
 		},
 		{
 			label: "Portfolio",
-			href: "#"
+			href: "#",
 		},
 		{
 			label: "Nos Clients",
-			href: "#"
+			href: "#",
 		},
 		{
 			label: "FAQ",
-			href: "#"
+			href: "#",
 		},
 		{
 			label: "Prendre un RDV",
-			href: "#"
+			href: "#",
 		},
 	];
 
@@ -46,8 +46,8 @@ export default function Footer() {
 					maskSize: "100% 100%",
 				}}
 				>
-        SHORT.
-      </span>
+				SHORT.
+			</span>
 			<div className="mb-[71px]">
 				<Image src={"/images/logoWhite.svg"} alt="logo" width={150} height={62}/>
 			</div>
