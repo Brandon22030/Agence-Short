@@ -13,14 +13,26 @@ export default function Header() {
 	const toggleMenu = () => setOpenMenu(prev => !prev);
 
 	const menuItems = [
-		{ label: "Étude de cas", href: "#" },
-		{ label: "Portfolio", href: "#" },
-		{ label: "Nos Clients", href: "#" },
-		{ label: "FAQ", href: "#" },
+		{
+			label: "Étude de cas",
+			href: "#"
+		},
+		{
+			label: "Portfolio",
+			href: "#"
+		},
+		{
+			label: "Nos Clients",
+			href: "#"
+		},
+		{
+			label: "FAQ",
+			href: "#"
+		},
 	];
 
 	return(
-		<div className="bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
+		<div className="z-50 bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
 			<div className="flex justify-between items-center ">
 				<Image src={"/images/logoo.svg"} alt="logo" width={50} height={50} className="md:w-[70px]"/>
 
