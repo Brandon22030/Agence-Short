@@ -32,7 +32,7 @@ export default function Header() {
 	];
 
 	return(
-		<div className="fixed top-0 left-0 bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
+		<div className="fixed top-0 inset-x-0 z-[200] bg-[#FFFEFC]/24 border border-[#707070]/16 backdrop-blur-md mx-[19.5px] md:mx-[200px] px-5 md:px-[62px] py-[25px] md:py-[11px] rounded-full shadow">
 			<div className="flex justify-between items-center ">
 				<Image src={"/images/logo.svg"} alt="logo" width={50} height={50} className="md:w-[70px]"/>
 				<button onClick={toggleMenu} className="md:hidden p-2 flex items-center justify-center transition cursor-pointer">
@@ -55,7 +55,7 @@ export default function Header() {
 			</div>
 
 			{openMenu && (
-				<div className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md mt-2 p-4 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+				<div className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md mt-0.5 p-4 rounded-lg shadow-lg flex flex-col items-center space-y-4">
 					{menuItems.map((item) => (
 						<a key={item.label} href={item.href} className="hover:text-primary transition">
 							{item.label}
